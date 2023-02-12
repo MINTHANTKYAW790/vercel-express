@@ -1,0 +1,28 @@
+{
+    "name": "vercel-express",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "dev": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MINTHANTKYAW790/vercel-express.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MINTHANTKYAW790/vercel-express/issues"
+    },
+    "homepage": "https://github.com/MINTHANTKYAW790/vercel-express#readme",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "typescript": "^4.9.5"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "ts-node-dev": "^2.0.0"
+    }
+}
