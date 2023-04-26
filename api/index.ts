@@ -15,6 +15,7 @@ const html = `
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -37,7 +38,7 @@ app.get("/api", (req: Request, res: Response) => {
     res.send(html);
 });
 
-app.get("/users", (req: Request, res: Response) => {
+app.get("/api/users", (req: Request, res: Response) => {
     res.send({
         name: "Min Thant Kyaw",
         age: 52,

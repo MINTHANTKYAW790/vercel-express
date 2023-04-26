@@ -9,4 +9,8 @@ const fetchData = async () => {
     }
 };
 
+const upload = () => {
+    console.log("Uploading files .....");
+};
+
 fetchData();
