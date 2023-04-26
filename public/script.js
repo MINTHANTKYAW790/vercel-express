@@ -1,7 +1,7 @@
 const fetchData = async () => {
     const apiUrl = localStorage.getItem("apiUrl");
     if (apiUrl) {
-        const response = await fetch(`${apiUrl}/users`);
+        const response = await fetch(`${apiUrl}/`);
         const data = await response.json();
         console.log(data);
     } else {
