@@ -1,5 +1,5 @@
+const apiUrl = localStorage.getItem("apiUrl");
 const fetchData = async () => {
-    const apiUrl = localStorage.getItem("apiUrl");
     if (apiUrl) {
         const response = await fetch(`${apiUrl}/users`);
         const data = await response.json();
@@ -9,8 +9,16 @@ const fetchData = async () => {
     }
 };
 
-const upload = () => {
-    console.log("Uploading files .....");
+const upload = async () => {
+    const inputTag = document.getElementById("uploadFile");
+    const files = [...inputTag.files];
+    const formData = new FormData();
+    files.forEach((file) => formData.append("files", file));
+    const response = await fetch(`${apiUrl}/uploadFile`, {
+        method: "POST",
+        body: formData,
+    });
+    console.log(response);
 };
 
 fetchData();
